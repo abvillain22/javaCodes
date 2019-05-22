@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package iftest;
+
+/**
+ *
+ * @author abvil
+ */
+public class IFTest {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        FixedStack mystack1 = new FixedStack(5);
+        FixedStack mystack2 = new FixedStack(8);
+        
+        for(int i=0; i<5; i++){
+            mystack1.push(i);
+        }
+        for(int i=0; i<8; i++){
+            mystack2.push(i);
+        }
+        System.out.println("stack 1 :");
+        for(int i=0; i<5; i++){
+            System.out.println(mystack1.pop());
+        }
+        
+        System.out.println("stack 2 :");
+        for(int i=0; i<8; i++){
+            System.out.println(mystack2.pop());
+        }
+    }
+    
+}
